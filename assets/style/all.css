@@ -70,6 +70,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
+  font-family: "Noto Sans TC", sans-serif;
 }
 
 .product-card {
@@ -77,9 +78,18 @@ body {
   overflow: hidden;
   border: 1px solid #F2F2F2;
 }
-.product-card:hover {
-  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-          box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+.product-card:hover .product-card_img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.product-card_img-wrap {
+  overflow: hidden;
+}
+.product-card_img {
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 .product-card_header {
   padding: 20px 32px;

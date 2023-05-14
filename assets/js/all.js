@@ -56,7 +56,9 @@ const renderProducts = () => {
     str+=`
     <li class="product_item">
           <div class="product-card">
-            <img class="product-card_img" src="${item.imgUrl}" alt="tool1">
+            <div class="product-card_img-wrap">
+              <img class="product-card_img" src="${item.imgUrl}" alt="${item.title}">
+            </div>
             <div class="product-card_header">
               <h3 class="title">${item.title}</h3>
               <p class="text">${item.description}</p>
@@ -68,7 +70,7 @@ const renderProducts = () => {
             <div class="product-card_footer">
               <h5 class="title">${item.tag}</h5>
               <a class="link" href="#">
-                <img src="./assets/image/icons/share.png" alt="">
+                <img src="./assets/image/icons/share.png" alt="share-link">
               </a>
             </div>
           </div>

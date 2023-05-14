@@ -1,19 +1,33 @@
 .product-card {
+  $this: &;
   border-radius: 16px;
   overflow: hidden;
   border: 1px solid $black-20;
+  
   &:hover {
-    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+    #{$this}_img {
+      transform: scale(1.2);
+    }
+  }
+
+  &_img-wrap {
+    overflow: hidden;
+  }
+
+  &_img {
+    transition: transform 0.3s;
   }
 
   &_header {
     padding: 20px 32px;
+
     .title {
       font-size: 20px;
       line-height: 24px;
       font-weight: 900;
       margin-bottom: 12px;
     }
+
     .text {
       height: 42px;
       font-size: 14px;
@@ -30,6 +44,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     .title {
       font-weight: 700;
     }
@@ -42,7 +57,7 @@
     align-items: center;
   }
 
-  > * + * {
+  >*+* {
     border-bottom: 1px solid $black-20;
   }
 }
