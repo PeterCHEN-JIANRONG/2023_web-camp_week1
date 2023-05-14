@@ -1,0 +1,48 @@
+.product-card {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid $black-20;
+  &:hover {
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+  }
+
+  &_header {
+    padding: 20px 32px;
+    .title {
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 900;
+      margin-bottom: 12px;
+    }
+    .text {
+      height: 42px;
+      font-size: 14px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+  }
+
+  &_body {
+    padding: 20px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .title {
+      font-weight: 700;
+    }
+  }
+
+  &_footer {
+    padding: 20px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  > * + * {
+    border-bottom: 1px solid $black-20;
+  }
+}
