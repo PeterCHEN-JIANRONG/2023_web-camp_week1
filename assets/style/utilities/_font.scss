@@ -1,0 +1,191 @@
+.ds-1 {
+  font-size: 160px;
+  line-height: 1.2;
+}
+.ds-2 {
+  font-size: 120px;
+  line-height: 1.2;
+}
+.ds-3 {
+  font-size: 80px;
+  line-height: 1.2;
+}
+.h1 {
+  font-size: 48px;
+  line-height: 1.2;
+}
+.h2 {
+  font-size: 40px;
+  line-height: 1.2;
+}
+.h3 {
+  font-size: 32px;
+  line-height: 1.2;
+}
+.h4 {
+  font-size: 28px;
+  line-height: 1.2;
+}
+.h5 {
+  font-size: 24px;
+  line-height: 1.2;
+}
+.h6 {
+  font-size: 20px;
+  line-height: 1.2;
+}
+.small {
+  font-size: 14px;
+  line-height: 1.2;
+}
+.tiny {
+  font-size: 12px;
+  line-height: 1.2;
+}
+.fw-bold {
+  font-weight: bold;
+}
+
+.ds-1-md {
+  @include media-md {
+    font-size: 160px;
+    line-height: 1.2;
+  }
+}
+.ds-2-md {
+  @include media-md {
+    font-size: 120px;
+    line-height: 1.2;
+  }
+}
+.ds-3-md {
+  @include media-md {
+    font-size: 80px;
+    line-height: 1.2;
+  }
+}
+.h1-md {
+  @include media-md {
+    font-size: 48px;
+    line-height: 1.2;
+  }
+}
+.h2-md {
+  @include media-md {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+}
+.h3-md {
+  @include media-md {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+}
+.h4-md {
+  @include media-md {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+}
+.h5-md {
+  @include media-md {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+}
+.h6-md {
+  @include media-md {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+.small-md {
+  @include media-md {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+}
+.tiny-md {
+  @include media-md {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+}
+.fw-bold-md {
+  @include media-md {
+    font-weight: bold;
+  }
+}
+
+.ds-1-lg {
+  @include media-lg {
+    font-size: 160px;
+    line-height: 1.2;
+  }
+}
+.ds-2-lg {
+  @include media-lg {
+    font-size: 120px;
+    line-height: 1.2;
+  }
+}
+.ds-3-lg {
+  @include media-lg {
+    font-size: 80px;
+    line-height: 1.2;
+  }
+}
+.h1-lg {
+  @include media-lg {
+    font-size: 48px;
+    line-height: 1.2;
+  }
+}
+.h2-lg {
+  @include media-lg {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+}
+.h3-lg {
+  @include media-lg {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+}
+.h4-lg {
+  @include media-lg {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+}
+.h5-lg {
+  @include media-lg {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+}
+.h6-lg {
+  @include media-lg {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+.small-lg {
+  @include media-lg {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+}
+.tiny-lg {
+  @include media-lg {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+}
+.fw-bold-lg {
+  @include media-lg {
+    font-weight: bold;
+  }
+}

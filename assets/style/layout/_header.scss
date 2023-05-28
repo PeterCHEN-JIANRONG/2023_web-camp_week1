@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 0;
+  border-bottom: 1px solid white;
+  margin-bottom: 40px;
+
+  @include media-md {
+    padding: 20px 0;
+  }
+
+  &_title {
+    background: url('../image/logo.png');
+    background-size: cover;
+    height: 24px;
+    width: 147px;
+    text-indent:101%;
+    white-space: nowrap;
+    overflow:hidden;
+    
+    @include media-md {
+      height: 40px;
+      width: 245px;
+    }
+  }
+
+  .navbar_list {
+    display: none;
+    
+    @include media-md {
+      display: flex;
+      gap: 20px;
+    }
+  }
+
+  .navbar_toggle {
+    display: block;
+
+    @include media-md {
+      display: none;
+    }
+  }
+}

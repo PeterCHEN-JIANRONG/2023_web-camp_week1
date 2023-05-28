@@ -1,15 +1,81 @@
 .index {
+  .banner {
+    padding-top: 0;
+
+    &_title {
+      margin-bottom: 40px;
+    }
+
+    &_cta {
+      margin-bottom: 100px;
+    }
+
+    &_animation {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    &_imgs {
+      width: 351px;
+      height: 117px;
+      background: url('../image/deco.png');
+      background-size: contain;
+      background-repeat: repeat-x;
+      
+      @include media-md {
+        width: 540px;
+        height: 180px;
+      }
+    }
+  }
+
   .product {
+    color: #000;
+    background: white;
+    border-radius: 20px;
+    padding: 80px 0;
+    
+    @include media-lg {
+      padding: 160px 0;
+      border-radius: 160px;
+    }
+
+    &_title {
+      margin-bottom: 32px;
+      
+      @include media-md {
+        margin-bottom: 80px;
+      }
+    }
+    
     &_list {
       display: flex;
       flex-wrap: wrap;
-      margin: 0 -12px -24px;
+      margin: 0 -12px;
+      margin-bottom: 8px;
+      
+      @include media-md {
+        margin-bottom: 16px;
+      }
     }
 
     &_item {
-      width: 33.33%;
+      width: 100%;
       padding: 0 12px;
       margin-bottom: 24px;
+
+      @include media-md {
+        width: 50%;
+      }
+
+      @include media-lg {
+        width: 33.33%;
+      }
+    }
+
+    .pagination_wrap {
+      display: flex;
+      justify-content: flex-end;
     }
   }
 }

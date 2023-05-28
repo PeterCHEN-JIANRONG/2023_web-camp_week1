@@ -7,13 +7,32 @@ img {
 }
 
 .container {
-  max-width: 1296px;
+  max-width: 1320px;
+  padding: 0 12px;
   margin: 0 auto;
 }
 
 body {
+  color: white;
+  background: #000;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   font-family: 'Noto Sans TC', sans-serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  &:hover {
+    color: $primary;
+  }
+}
+
+section {
+  padding: 120px 0;
+  
+  @include media-md {
+      padding: 160px 0;
+    }
 }

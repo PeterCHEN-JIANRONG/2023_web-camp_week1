@@ -1,8 +1,15 @@
 @import './config/reset';
 @import './config/variables';
+@import './utilities/breakpoints';
 @import './config/base';
 
+@import './utilities/font';
+
+@import './layout/header';
+
+@import './component/button';
 @import './component/card';
+@import './component/pagination';
 
 @import './page/index';
 

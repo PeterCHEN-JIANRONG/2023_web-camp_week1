@@ -1,0 +1,20 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  .page_link {
+    color: #000;
+    height: 48px;
+    width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+
+    &:hover {
+      color: white;
+      background: #000;
+    }
+  }
+}
